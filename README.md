@@ -8,3 +8,5 @@ Project3 Big-endian, Little-endian
 Project4 Client to Server message
 
 Project5 while로 메시지 계속 보내기, Iterative Server(Echo Server)
+
+Project6 Iterative Server to Hello Client 
