@@ -42,16 +42,11 @@
 
 ## 저자
 
-* **배다슬** - *초기작* - [bghgu](https://github.com/bghgu)
+* **배다슬** - [bghgu](https://github.com/bghgu)
 
-
-## 라이센스
-
-이 프로젝트는 MIT 허가서를 사용합니다 - [LICENSE.md](LICENSE.md) 파일에서 자세히 알아보세요.
 
 ## 감사 인사
 
-* 본인의 코드가 사용된 분께 경의를 표합니다
 * **윤성우의 열혈 TCP/IP 소켓 프로그래밍**
 
 ---
