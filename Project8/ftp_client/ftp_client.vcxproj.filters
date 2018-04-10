@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ftp_client.cpp">
+    <ClCompile Include="ftp_client.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

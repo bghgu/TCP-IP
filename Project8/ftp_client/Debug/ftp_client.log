@@ -1,0 +1,4 @@
+﻿  ftp_client.c
+d:\2018_1학기\네트워크 프로그래밍\repos\project8\ftp_client\ftp_client.c(37): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winsock2.h(1830): note: 'inet_addr' 선언을 참조하십시오.
+  ftp_client.vcxproj -> D:\2018_1학기\네트워크 프로그래밍\repos\Project8\Debug\ftp_client.exe

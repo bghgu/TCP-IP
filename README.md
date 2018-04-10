@@ -34,6 +34,12 @@
 -  Echo Calculator
 
 
+## Project8
+
+- tcp Server - Client
+- tcp의 데이터 경계가 없는 문제를 해결하기 위해 문자열의 길이와 문자열을 같이 보낸다
+- FTP Server - Client (1)
+
 
 ## 사용된 도구
 
