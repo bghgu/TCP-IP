@@ -1,0 +1,4 @@
+﻿  ftp_server.c
+d:\2018_1학기\네트워크 프로그래밍\repos\project9\project9\ftp_server.c(56): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: 'fopen' 선언을 참조하십시오.
+  Project9.vcxproj -> D:\2018_1학기\네트워크 프로그래밍\repos\Project9\Debug\ftp_server.exe
