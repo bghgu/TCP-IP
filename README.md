@@ -41,6 +41,12 @@
 - FTP Server - Client (1)
 
 
+## Project9
+
+- FTP Server - Client (2)
+- 클라이언트로 부터 파일이름을 입력 받고(.txt), 파일이 있을 경우 파일의 내용을 읽어서 보내준다.
+- 클라이언트는 서버로 부터 전송받은 문자열을 파일에 저장한다.
+
 ## 사용된 도구
 
 * [Visual Studio](https://www.visualstudio.com/ko/downloads/) - IDE
