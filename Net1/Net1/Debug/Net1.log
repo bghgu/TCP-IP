@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Net1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Net1_server.cpp
+  코드를 생성하고 있습니다...
+  건너뛰고 있습니다... (관련된 변경 내용 없음)
+  stdafx.cpp
+  Net1.vcxproj -> D:\2018_1학기\네트워크 프로그래밍\repos\Net1\Debug\Net1_server.exe
+  Net1.vcxproj -> D:\2018_1학기\네트워크 프로그래밍\repos\Net1\Debug\Net1_server.pdb (Full PDB)
