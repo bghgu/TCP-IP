@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 	SOCKET hSocket;
 	SOCKADDR_IN servAdr;
 	char opmsg[BUF_SIZE];
-	int result, opndCnt, i;
+	int result = 0, opndCnt = 0, i = 0;
 
 	if (argc != 3) {
 		printf("Usage : %s <IP> <port>\n", argv[0]);
@@ -46,21 +46,25 @@ int main(int argc, char *argv[]) {
 	else
 		puts("Connected...........");
 
+	memset(&opmsg, 0, sizeof(opmsg));
+
 	fputs("피 연산자 수: ", stdout);
 	scanf("%d", &opndCnt);
-
 	opmsg[0] = (char)opndCnt;
 
 	for (i = 0; i<opndCnt; i++) {
 		printf("%d 번째 피 연산자 : ", i + 1);
-		//4바이트라 4칸씩 이동
 		scanf("%d", (int*)&opmsg[i*OPSZ + 1]);
 	}
 
 	fgetc(stdin);
-	fputs("연산자: ", stdout);
-	scanf("%c", &opmsg[opndCnt*OPSZ + 1]);
-	send(hSocket, opmsg, opndCnt*OPSZ + 2, 0);
+	for (i = 1; i < opndCnt; i++) {
+		printf("%d 번째 연산자 : ", i);
+		scanf("%c", &opmsg[opndCnt*OPSZ + i]);
+		fgetc(stdin);
+	}
+
+	send(hSocket, opmsg, opndCnt*OPSZ + opndCnt, 0);
 
 	recv(hSocket, (char*)&result, RLT_SIZE, 0);
 

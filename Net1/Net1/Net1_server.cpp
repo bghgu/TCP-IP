@@ -14,7 +14,7 @@
 #define OPSZ 4
 
 void ErrorHandling(char *message);
-int calculate(int opnum, int opnds[], char oprator);
+int calculate(int a, int b, char oprator);
 
 int main(int argc, char *argv[]) {
 
@@ -23,9 +23,9 @@ int main(int argc, char *argv[]) {
 	SOCKADDR_IN servAdr, clntAdr;
 
 	char opinfo[BUF_SIZE];
-	int result, opndCnt, i;
-	int recvCnt, recvLen;
-	int clntAdrSize;
+	int result = 0, opndCnt = 0, i = 0, temp = 0;
+	int recvCnt = 0, recvLen = 0;
+	int clntAdrSize = 0;
 
 	if (argc != 2) {
 		printf("Usage : %s <port>\n", argv[0]);
@@ -57,11 +57,14 @@ int main(int argc, char *argv[]) {
 		recv(hClntSock, (char*)&opndCnt, 1, 0);
 
 		recvLen = 0;
-		while ((opndCnt*OPSZ + 1)>recvLen) {
+		while ((opndCnt*OPSZ + opndCnt - 1)>recvLen) {
 			recvCnt = recv(hClntSock, &opinfo[recvLen], BUF_SIZE - 1, 0);
 			recvLen += recvCnt;
 		}
-		result = calculate(opndCnt, (int*)opinfo, opinfo[recvLen - 1]);
+		result = (int)opinfo[0];
+		for (int j = 1; j < opndCnt; j++) {
+			result = calculate(result, (int)opinfo[j*OPSZ], opinfo[recvLen - opndCnt + j]);
+		}
 		send(hClntSock, (char*)&result, sizeof(result), 0);
 		closesocket(hClntSock);
 	}
@@ -71,19 +74,17 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
-int calculate(int opnum, int opnds[], char op) {
-
-	int result = opnds[0], i;
-
+int calculate(int a, int b, char op) {
+	int result = 0;
 	switch (op) {
 	case '+':
-		for (i = 1; i<opnum; i++) result += opnds[i];
+		result = a + b;
 		break;
 	case '-':
-		for (i = 1; i<opnum; i++) result -= opnds[i];
+		result = a - b;
 		break;
 	case '*':
-		for (i = 1; i<opnum; i++) result *= opnds[i];
+		result = a * b;
 		break;
 	}
 	return result;
