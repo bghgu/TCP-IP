@@ -1,0 +1,7 @@
+﻿  Mid_test_client.cpp
+d:\2018_1학기\네트워크 프로그래밍\repos\mid_test\mid_test_client\mid_test_client.cpp(38): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: 'inet_addr' 선언을 참조하십시오.
+d:\2018_1학기\네트워크 프로그래밍\repos\mid_test\mid_test_client\mid_test_client.cpp(52): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+  Mid_test_client.vcxproj -> D:\2018_1학기\네트워크 프로그래밍\repos\Mid_test\Debug\Mid_test_client.exe
+  Mid_test_client.vcxproj -> D:\2018_1학기\네트워크 프로그래밍\repos\Mid_test\Debug\Mid_test_client.pdb (Full PDB)

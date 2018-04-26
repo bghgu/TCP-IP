@@ -61,6 +61,7 @@ int main(int argc, char *argv[]) {
 			recvCnt = recv(hClntSock, &opinfo[recvLen], BUF_SIZE - 1, 0);
 			recvLen += recvCnt;
 		}
+
 		result = (int)opinfo[0];
 		for (int j = 1; j < opndCnt; j++) {
 			result = calculate(result, (int)opinfo[j*OPSZ], opinfo[recvLen - opndCnt + j]);
