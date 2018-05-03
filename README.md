@@ -57,6 +57,11 @@
 * UDP chatting Program
 
 
+## Project12
+
+- Half-close
+- transfer file
+
 ## 사용된 도구
 
 * [Visual Studio](https://www.visualstudio.com/ko/downloads/) - IDE

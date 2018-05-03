@@ -1,10 +1,14 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
 application.properties
-.opendb
-Browse.VC.opendb
 
 ### VS ###
+.opendb
+Browse.VC.opendb
+.exe
+.db
+Debug/
+.suo
 
 ### STS ###
 .apt_generated
