@@ -62,6 +62,12 @@
 - Half-close
 - transfer file
 
+## Project13
+
+- DNS
+- get hostname by ip address
+- get hostname by DNS name
+
 ## 사용된 도구
 
 * [Visual Studio](https://www.visualstudio.com/ko/downloads/) - IDE

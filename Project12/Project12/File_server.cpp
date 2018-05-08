@@ -36,7 +36,12 @@ int main(int argc, char *argv[]) {
 
 	clntAdrSz = sizeof(clntAdr);
 	hClntSock = accept(hServSock, (SOCKADDR*)&clntAdr, &clntAdrSz);
-
+	
+	/*
+	파일 크기를 버퍼 만큼 자르면서 보낸다.
+	버퍼 크기 보다 (남은)파일의 크기가 작다면, 그만큼만 보낸다.
+	파일 크기를 모르기 때문에 그렇게 한다.
+	*/
 	while (1) {
 		readCnt = fread((void*)buf, 1, BUF_SIZE, fp);
 		if (readCnt < BUF_SIZE) {
