@@ -9,6 +9,7 @@ Browse.VC.opendb
 .db
 Debug/
 .suo
+.VC
 
 ### STS ###
 .apt_generated
