@@ -78,6 +78,10 @@
 * Semaphore
 * Event
 
+## Project16
+
+* Mutex chat
+
 ## 사용된 도구
 
 * [Visual Studio](https://www.visualstudio.com/ko/downloads/) - IDE
